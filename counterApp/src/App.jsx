@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import './App.css'
 function App() {
-  
   //let counter =15;
-  let[counter,setCounter]= useState(15)
+  const[counter,setCounter]= useState(15)
   const addValue =()=>{
     console.log("add is clicked",counter)
-    if(counter<25){
-      setCounter(counter= counter+1);
-    }
+  
+      setCounter( previousCounter=> previousCounter+1);
+      setCounter(previousCounter=> previousCounter+1 );
+      setCounter(previousCounter=> previousCounter+1);
+      setCounter(previousCounter=> previousCounter+1 );
+    
 }
 const removeValue =()=>{
      if(counter>0){
-      setCounter(counter=counter-1);
+      setCounter(counter-1);
      }
       console.log("remove is clicked", counter)
 }
