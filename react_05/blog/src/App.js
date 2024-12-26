@@ -2,11 +2,13 @@
 //next we will take a variable inside the functional component 
 import './App.css';
 import User from './User'
+import About from './About'
 function App() {
   
   return (
     <div className="App">
      <User/>
+     <About/>
     </div>
   );
 }
